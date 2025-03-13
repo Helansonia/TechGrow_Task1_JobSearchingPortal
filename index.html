@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobConnect </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>JobConnect</h1>
+    </header>
+
+    <nav>
+      <ul>
+          <li><a href="#" onclick="showContent('home')"> Home</a></li>
+          <li><a href="#" onclick="showContent('jobs')">Jobs</a></li>
+          <li><a href="#" onclick="showContent('companies')">Companies</a></li>
+          <li><a href="#" onclick="showContent('about')">About Us</a></li>
+          <li><a href="#" onclick="showContent('contact')">Contact</a></li>
+      </ul>
+  </nav>
+  
+  <section id="content">
+      <h2>Welcome to JobConnect</h2>
+      <p>Find the best job opportunities here.</p>
+  </section>
+  
+
+  <section class="search">
+    <h2>Find Your Dream Job</h2>
+    <form onsubmit="searchJobs(event)">
+        <input type="text" id="search-keywords" placeholder="Job Title, Keywords">
+        <input type="text" id="search-location" placeholder="Location">
+        <button type="submit">Search</button>
+    </form>
+</section>
+
+    <section class="job-listings">
+      <h2>Latest Job Listings</h2>
+      <ul>
+          <li>
+              <h3>Web Developer</h3>
+              <p><strong>Company:</strong> ABC Tech</p>
+              <p><strong>Location:</strong> India</p>
+              <p><strong>Description:</strong> Looking for a skilled web developer with experience in HTML, CSS, and JavaScript.</p>
+              <a href="#">Apply Now</a>
+          </li>
+          <li>
+              <h3>Graphic Designer</h3>
+              <p><strong>Company:</strong> XYZ Design</p>
+              <p><strong>Location:</strong> India</p>
+              <p><strong>Description:</strong> Seeking a creative graphic designer proficient in Adobe Photoshop and Illustrator.</p>
+              <a href="#">Apply Now</a>
+          </li>
+          <li>
+              <h3>Software Engineer</h3>
+              <p><strong>Company:</strong> Tech Innovators</p>
+              <p><strong>Location:</strong> USA</p>
+              <p><strong>Description:</strong> We need a software engineer with experience in Python, Java, or C++.</p>
+              <a href="#">Apply Now</a>
+          </li>
+          <li>
+              <h3>Data Analyst</h3>
+              <p><strong>Company:</strong> Data Solutions</p>
+              <p><strong>Location:</strong> Remote</p>
+              <p><strong>Description:</strong> Hiring a data analyst with expertise in SQL, Excel, and Power BI.</p>
+              <a href="#">Apply Now</a>
+          </li>
+          <li>
+              <h3>Cybersecurity Analyst</h3>
+              <p><strong>Company:</strong> SecureNet</p>
+              <p><strong>Location:</strong> Canada</p>
+              <p><strong>Description:</strong> Looking for a cybersecurity expert with knowledge of network security and ethical hacking.</p>
+              <a href="#">Apply Now</a>
+          </li>
+          <li>
+              <h3>Project Manager</h3>
+              <p><strong>Company:</strong> Global Enterprises</p>
+              <p><strong>Location:</strong> UK</p>
+              <p><strong>Description:</strong> Hiring an experienced project manager with PMP certification.</p>
+              <a href="#">Apply Now</a>
+          </li>
+          <li>
+              <h3>Marketing Specialist</h3>
+              <p><strong>Company:</strong> BrandMasters</p>
+              <p><strong>Location:</strong> Australia</p>
+              <p><strong>Description:</strong> Seeking a marketing expert with skills in digital marketing and SEO.</p>
+              <a href="#">Apply Now</a>
+          </li>
+          <li>
+              <h3>HR Manager</h3>
+              <p><strong>Company:</strong> PeopleFirst</p>
+              <p><strong>Location:</strong> Germany</p>
+              <p><strong>Description:</strong> Looking for an HR manager with experience in recruitment and employee relations.</p>
+              <a href="#">Apply Now</a>
+          </li>
+      </ul>
+  </section>
+  
+
+    <section class="add-job">
+        <h2>Post a Job</h2>
+        <form id="job-form">
+            <input type="text" id="job-title" placeholder="Job Title" required>
+            <input type="text" id="job-company" placeholder="Company Name" required>
+            <input type="text" id="job-location" placeholder="Location" required>
+            <textarea id="job-description" placeholder="Job Description" required></textarea>
+            <button type="submit">Add Job</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 JobConnect</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
